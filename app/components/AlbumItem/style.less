@@ -1,0 +1,80 @@
+.album {
+    padding-top: 15px;
+
+    &__album {
+        display: flex;
+        margin: 0 0 10px 0;
+        padding: 10px;
+        background-color: #ffffff;
+        border: 2px solid transparent;
+        box-shadow: 0px 0px 5px 0px #a1a1a1;
+        cursor: pointer;
+        opacity: 0.7;
+
+        &.active {
+            position: relative;
+            transform: scale(1.05);
+            transition: all 0.2s linear;
+            border: 2px solid #FF8F2E;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px 0px #FF8F2E;
+            opacity: 1;
+            z-index: 2;
+        }
+
+        &.default {
+            opacity: 1;
+        }
+    }
+
+    &__album__image {
+        flex: 0 0 20%;
+        max-width: 100px;
+    }
+
+    &__album__title {
+        flex: 0 0 80%;
+        align-self: center;
+        margin-left: 5px;
+        color: #666666;
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: capitalize;
+        word-break: break-word;
+    }
+
+    @media screen and (max-width: 768px) {
+        &__album {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 0 10px 0;
+            padding: 10px;
+            background-color: #ffffff;
+            border: 2px solid transparent;
+            box-shadow: 0px 0px 5px 0px #a1a1a1;
+            cursor: pointer;
+    
+            &.active {
+                border: 2px solid #FF8F2E;
+                border-radius: 10px;
+                box-shadow: 0px 0px 5px 0px #FF8F2E;
+            }
+        }
+    
+        &__album__image {
+            flex: 0 0 100%;
+            max-width: 100px;
+        }
+    
+        &__album__title {
+            flex: 0 0 100%;
+            align-self: center;
+            margin-left: 5px;
+            color: #666666;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: capitalize;
+            word-break: break-word;
+        }
+    }
+}

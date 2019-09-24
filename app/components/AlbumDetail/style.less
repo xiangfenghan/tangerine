@@ -1,0 +1,38 @@
+.album__detail {
+    display: flex;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid #FF8F2E;
+    border-radius: 10px;
+
+    &__image {
+        display: inline-block;
+        max-width: 50px;
+    }
+
+    &__title {
+        align-self: center;
+        margin-left: 5px;
+        font-size: 14px;
+        text-transform: capitalize;
+    }
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 2px solid #FF8F2E;
+        border-radius: 10px;
+
+        &__image {
+            display: inline-block;
+            max-width: 50px;
+        }
+    
+        &__title {
+            align-self: center;
+            margin-left: 5px;
+        }
+    }
+}

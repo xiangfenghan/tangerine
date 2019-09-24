@@ -1,0 +1,26 @@
+.album {
+    display: flex;
+    padding: 15px 0 0;
+
+    &__lists {
+        flex: 0 0 40%;
+        padding: 5px 20px;
+    }
+
+    &__details {
+        flex: 0 0 60%;
+        padding: 5px 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+        &__lists {
+            flex: 20%;
+            padding: 5px 10px;
+        }
+    
+        &__details {
+            flex: 80%;
+            padding: 5px 5px;
+        }
+    }
+}
